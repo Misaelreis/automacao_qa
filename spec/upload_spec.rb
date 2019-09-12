@@ -10,13 +10,12 @@ describe 'upload', :upload do
         click_button 'Upload'
         div = find('#uploaded-file')
         expect(div.text). eql? 'rspec.png'
+
         # outro exemplo
         img = find('#new-image')
         expect(img[:src]).to include '/uploads/rspec.png'
-
     end
 
     after(:each) do
-        sleep 1
     end
 end

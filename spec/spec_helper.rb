@@ -19,6 +19,7 @@ Capybara.configure do |config|
   config.default_driver = :selenium#_chrome
   config.default_max_wait_time = 15
   config.app_host = 'https://training-wheels-protocol.herokuapp.com'
+  config.default_max_wait_time = 5
 end
 
 #Selenium::WebDriver::Chrome::Service::driver_path = '/Users/misaelcandido/Documents/Projetos/capy/chromedriver'
