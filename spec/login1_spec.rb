@@ -1,4 +1,4 @@
-describe 'Forms' do
+describe 'Forms', :login do
     it 'login com sucesso' do
         visit '/login'
         fill_in 'userId', with: 'stark'
