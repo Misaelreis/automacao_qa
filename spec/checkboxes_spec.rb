@@ -20,6 +20,5 @@ describe 'caixa de seleção', :ck do
     end
 
     after(:each) do
-        sleep 1
     end
 end
