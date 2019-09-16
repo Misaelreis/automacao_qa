@@ -3,7 +3,7 @@ describe 'Teclado', :key do
         visit('/key_presses')
     end
 
-    it 'Enviando teclas' do
+    it 'enviando teclas' do
         teclas = %i[tab control enter escape]
 
         teclas.each do |t|
@@ -12,7 +12,7 @@ describe 'Teclado', :key do
         end
     end
 
-    it 'Enviando letras' do
+    it 'enviando letras' do
         letras = %w[a e i o u]
         
         letras.each do |l|

@@ -1,4 +1,4 @@
-describe 'botões do radio', :radio do
+describe 'Botões do radio', :radio do
     before(:each) do
         visit('/radios')
     end

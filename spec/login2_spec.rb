@@ -4,7 +4,7 @@ describe 'Login2', :rand do
         visit('/login2')
     end
 
-    it 'Com data de nascimento' do
+    it 'com data de nascimento' do
         find('#userId').set 'stark'
         find('#passId').set 'jarvis!'
 

@@ -1,5 +1,5 @@
 describe 'Forms' do
-    it 'Login com sucesso' do
+    it 'login com sucesso' do
         visit '/login'
         fill_in 'userId', with: 'stark'
         fill_in 'passId', with: 'jarvis!'

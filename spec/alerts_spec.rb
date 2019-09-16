@@ -3,14 +3,14 @@ describe 'Alert js', :alert do
         visit('/javascript_alerts')
     end
 
-    it 'Alerta' do
+    it 'alerta' do
         click_button 'Alerta'
         msg = page.driver.browser.switch_to.alert.text
         expect(msg).to eql 'Isto é uma mensagem de alerta'
         puts msg
     end
 
-    it 'Sim confirma' do
+    it 'sim confirma' do
         click_button 'Confirma'
         msg = page.driver.browser.switch_to.alert.text
         expect(msg).to eql 'E ai confirma?'
@@ -18,7 +18,7 @@ describe 'Alert js', :alert do
         expect(page).to have_content 'Mensagem confirmada'
     end
 
-    it 'Não confirma' do
+    it 'não confirma' do
         click_button 'Confirma'
         msg = page.driver.browser.switch_to.alert.text
         expect(msg).to eql 'E ai confirma?'
@@ -26,14 +26,14 @@ describe 'Alert js', :alert do
         expect(page).to have_content 'Mensagem não confirmada'
     end
 
-    it 'Prompt', :accept do
+    it 'prompt', :accept do
         accept_prompt(with: 'Tester') do
             click_button 'Prompt'
         end
         expect(page).to have_content 'Olá, Tester'
     end
 
-    it 'No prompt', :naccept do
+    it 'no prompt', :naccept do
        click_button 'Prompt'
        dismiss_prompt(with: '')
        expect(page).to have_content 'Olá, null'

@@ -3,7 +3,7 @@ describe 'Alternando entre janelas', :windows do
         visit('/windows')
     end
 
-    it 'Nova janela' do
+    it 'nova janela' do
         novaJanela = window_opened_by {click_link 'Clique aqui'}
         within_window -> {page.title == 'Nova Janela'} do
             expect(page).to have_content 'Aqui temos uma nova janela \o/'

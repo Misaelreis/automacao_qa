@@ -1,4 +1,4 @@
-describe 'caixa de seleção', :ck do
+describe 'Caixa de seleção', :ck do
     before(:each) do
         visit('/checkboxes')
     end

@@ -1,4 +1,4 @@
-describe 'upload', :upload do
+describe 'Upload', :upload do
     
     before(:each) do
         @imagem = Dir.pwd + '/spec/fixture/rspec.png'

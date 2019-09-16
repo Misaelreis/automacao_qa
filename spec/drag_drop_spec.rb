@@ -4,7 +4,7 @@ describe 'Drag and Drop', :drop do
         visit('/drag_and_drop')
     end
 
-    it 'Homem aranha pertence ao time do stark' do
+    it 'homem aranha pertence ao time do stark' do
         stark = find('.team-stark .column')
         cap = find('.team-cap .column')
 

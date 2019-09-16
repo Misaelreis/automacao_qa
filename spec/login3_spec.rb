@@ -4,7 +4,7 @@ describe 'Login com cadastro', :lc do
         visit('/access')
     end
 
-    it 'Com com sucesso' do
+    it 'com com sucesso' do
 
         within('#login') do
             find('input[name=username]').set 'stark'
@@ -16,7 +16,7 @@ describe 'Login com cadastro', :lc do
         expect(find('#flash').text). eql? 'Olá, Tony Stark. Você acessou a área logada!'
     end
 
-    it 'Cadastro com sucesso' do
+    it 'cadastro com sucesso' do
 
         within('#signup') do
             find('input[name=username]').set 'Jorge'
